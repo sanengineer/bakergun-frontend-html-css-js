@@ -1,102 +1,111 @@
-const api = axios.create({
-  baseURL: `https://bakergun-backend.herokuapp.com/api/v1`,
-});
-
+const req = new XMLHttpRequest();
+// var date = new Date();
 const loop = document.getElementById("akar");
-
 const ppbox = document.createElement("div");
+
+// Endpoint Backend RestAPI Local
+// const apiv1 = "http://localhost:8008/api/v1";
+
+// Endpoint Backend RestAPI Cloud
+const apiv1 = "https://bakergun-backend.herokuapp.com/api/v1";
+
+req.open("GET", `${apiv1}/players`, true);
+
 ppbox.setAttribute("class", "players-people-box");
 
 loop.appendChild(ppbox);
 
-api.get("/players").then((res) => {
-  var json = res.data;
+req.onload = function () {
+  var data = JSON.parse(this.response);
 
-  json.forEach((blogpost) => {
-    const ppboxlist = document.createElement("div");
-    ppboxlist.setAttribute("class", "players-people-box-list");
+  // Checking Respon Data
+  console.log(data);
 
-    const firsttext = document.createElement("div");
-    firsttext.setAttribute(
-      "class",
-      "first-text d-flex justify-content-between"
-    );
+  if (req.status >= 200 && req.status < 400) {
+    data.forEach((blogpost) => {
+      const ppboxlist = document.createElement("div");
+      ppboxlist.setAttribute("class", "players-people-box-list");
 
-    const secondtext = document.createElement("div");
-    secondtext.setAttribute("class", "second-text");
+      const firsttext = document.createElement("div");
+      firsttext.setAttribute(
+        "class",
+        "first-text d-flex justify-content-between"
+      );
 
-    const thirdtext = document.createElement("div");
-    thirdtext.setAttribute("class", "third-text");
+      const secondtext = document.createElement("div");
+      secondtext.setAttribute("class", "second-text");
 
-    const imgbio = document.createElement("div");
-    imgbio.setAttribute("class", "img-bio d-flex justify-content-between");
+      const thirdtext = document.createElement("div");
+      thirdtext.setAttribute("class", "third-text");
 
-    const imgprofbox = document.createElement("div");
-    imgprofbox.setAttribute("class", "image-profile-box");
+      const imgbio = document.createElement("div");
+      imgbio.setAttribute("class", "img-bio d-flex justify-content-between");
 
-    const imgprof = document.createElement("div");
-    imgprof.setAttribute("class", "image-profile");
+      const imgprofbox = document.createElement("div");
+      imgprofbox.setAttribute("class", "image-profile-box");
 
-    const imgsrc = document.createElement("img");
-    imgsrc.setAttribute("class", "img-src rounded-circle");
-    imgsrc.setAttribute("width", 30);
-    imgsrc.setAttribute("alt", "Picture Profile");
-    imgsrc.src = blogpost.avatar;
+      const imgprof = document.createElement("div");
+      imgprof.setAttribute("class", "image-profile");
 
-    const biodsc = document.createElement("div");
-    biodsc.setAttribute("class", "bio-desc pl-4");
+      const imgsrc = document.createElement("img");
+      imgsrc.setAttribute("class", "img-src rounded-circle");
+      imgsrc.setAttribute("width", 30);
+      imgsrc.setAttribute("alt", "Picture Profile");
+      imgsrc.src = blogpost.avatar;
 
-    const bioname = document.createElement("div");
-    bioname.setAttribute("class", "bio-name");
-    bioname.textContent = blogpost.name;
+      const biodsc = document.createElement("div");
+      biodsc.setAttribute("class", "bio-desc pl-4");
 
-    const biopro = document.createElement("div");
-    biopro.setAttribute("class", "bio-pro");
-    biopro.textContent = blogpost.jobs;
+      const bioname = document.createElement("div");
+      bioname.setAttribute("class", "bio-name");
+      bioname.textContent = blogpost.name;
 
-    const icotwt = document.createElement("div");
-    icotwt.setAttribute("class", "logo-twt");
+      const biopro = document.createElement("div");
+      biopro.setAttribute("class", "bio-pro");
+      biopro.textContent = blogpost.jobs;
 
-    const icotwtsrc = document.createElement("img");
-    icotwtsrc.setAttribute("class", "logo-twt-src");
-    icotwtsrc.setAttribute("width", 15);
-    icotwtsrc.src = blogpost.avatar;
+      const icotwt = document.createElement("div");
+      icotwt.setAttribute("class", "logo-twt");
 
-    const spntwotxt = document.createElement("span");
-    blogpost.comment = blogpost.comment.substring(0, 44);
-    spntwotxt.textContent = `${blogpost.comment}...`;
+      const icotwtsrc = document.createElement("img");
+      icotwtsrc.setAttribute("class", "logo-twt-src");
+      icotwtsrc.setAttribute("width", 15);
+      icotwtsrc.src = blogpost.avatar;
 
-    // movie.comment = movie.comment.substring(0, 300);
-    // p.textContent = `${movie.comment}...`;
+      const spntwotxt = document.createElement("span");
+      blogpost.comment = blogpost.comment.substring(0, 44);
+      spntwotxt.textContent = `${blogpost.comment}...`;
 
-    const spnthirdtxt = document.createElement("span");
-    spnthirdtxt.textContent = blogpost.createdAt;
+      const spnthirdtxt = document.createElement("span");
+      spnthirdtxt.textContent = blogpost.createdAt;
 
-    ppbox.appendChild(ppboxlist);
+      ppbox.appendChild(ppboxlist);
 
-    ppboxlist.appendChild(firsttext);
-    ppboxlist.appendChild(secondtext);
-    ppboxlist.appendChild(thirdtext);
+      ppboxlist.appendChild(firsttext);
+      ppboxlist.appendChild(secondtext);
+      ppboxlist.appendChild(thirdtext);
 
-    firsttext.appendChild(imgbio);
-    firsttext.appendChild(icotwt);
+      firsttext.appendChild(imgbio);
+      firsttext.appendChild(icotwt);
 
-    icotwt.appendChild(icotwtsrc);
+      icotwt.appendChild(icotwtsrc);
 
-    imgbio.appendChild(imgprofbox);
-    imgprofbox.appendChild(imgprof);
-    imgprof.appendChild(imgsrc);
+      imgbio.appendChild(imgprofbox);
+      imgprofbox.appendChild(imgprof);
+      imgprof.appendChild(imgsrc);
 
-    imgbio.appendChild(biodsc);
+      imgbio.appendChild(biodsc);
 
-    biodsc.appendChild(bioname);
-    biodsc.appendChild(biopro);
+      biodsc.appendChild(bioname);
+      biodsc.appendChild(biopro);
 
-    secondtext.appendChild(spntwotxt);
+      secondtext.appendChild(spntwotxt);
 
-    thirdtext.appendChild(spnthirdtxt);
-  });
+      thirdtext.appendChild(spnthirdtxt);
+    });
+  } else {
+    console.log("nothing respond");
+  }
+};
 
-  console.log(json);
-  console.log(c);
-});
+req.send(); // ini buat apa ya?? :P

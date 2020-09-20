@@ -2,7 +2,11 @@ const req = new XMLHttpRequest();
 const bodId = document.getElementById("bodyId");
 const contFeatImg = document.getElementById("sectionNewLettFeatureImage");
 const contactPageBgBottom = document.getElementById("contactPageFootBg");
-const apiv1 = "http://localhost:8008/api/v1";
+// Endpoint Backend RestAPI Local
+// const apiv1 = "http://localhost:8008/api/v1";
+
+// Endpoint Backend RestAPI Cloud
+const apiv1 = "https://bakergun-backend.herokuapp.com/api/v1";
 
 req.open("GET", `${apiv1}/images`, true);
 req.onload = function () {
