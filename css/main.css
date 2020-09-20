@@ -1326,6 +1326,13 @@ body {
 }
 
 /** Contact Page **/
+.body-foot-page {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: -182px;
+  background-position-y: 600px;
+}
+
 .contact-page-section {
   margin-top: 2rem;
   padding-top: 4rem;
