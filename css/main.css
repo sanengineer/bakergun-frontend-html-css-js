@@ -857,6 +857,11 @@ body {
   width: 30px;
 }
 
+.contact-pagebut {
+  padding: 21px 10px;
+  font-weight: bold;
+}
+
 /*-Ipad-*/
 @media (max-width: 768px) {
   .about-us-title-2,
