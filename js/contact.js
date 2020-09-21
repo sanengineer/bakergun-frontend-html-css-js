@@ -2,6 +2,7 @@ const req = new XMLHttpRequest();
 const bodId = document.getElementById("bodyId");
 const contFeatImg = document.getElementById("contactPageFeatureImage");
 const contactPageBgBottom = document.getElementById("contactPageFootBg");
+//
 // Endpoint Backend RestAPI Local
 // const apiv1 = "http://localhost:8008/api/v1";
 

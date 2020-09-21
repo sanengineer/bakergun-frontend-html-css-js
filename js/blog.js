@@ -3,14 +3,27 @@ const api = axios.create({
 });
 
 const loopblog = document.getElementById("cardsArticleColumn");
+const blogbghero = document.getElementById("blogBgHero");
 
 const cardfeeds = document.createElement("div");
 cardfeeds.setAttribute("class", "card-feeds");
 
 loopblog.appendChild(cardfeeds);
 
+api.get("/images").then((res) => {
+  var blogbg = res.data[22].imageUrl;
+
+  // Cek Respon Data
+  console.log(`file image url: ` + blogbg);
+
+  blogbghero.style.backgroundImage = `url(${blogbg})`;
+});
+
 api.get("/blog").then((res) => {
   var json = res.data;
+
+  // Cek Respon Data
+  console.log(json);
 
   json.forEach((blogpost) => {
     const artic = document.createElement("article");
@@ -81,8 +94,5 @@ api.get("/blog").then((res) => {
     snauthcatrdtime.appendChild(datepost);
 
     ava.appendChild(avaimgsrc);
-
-    // Cek Respon Data
-    // console.log(json);
   });
 });
