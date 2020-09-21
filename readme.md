@@ -4,40 +4,21 @@
 
 Bakergun adalah akronim dari Batu Kertas Gunting.
 
+Semua asset images dari semua halaman atau pages di game ini menkonsumsi tau merequest dari [Back-End](https://github.com/sanengineer/bakergun-backend) melalui ReSTAPI.
 
-Dibikin dengan bootstrap, konsep tampilan tablet (iPad) first.
+Project ini dibangun dengan HTML, CSS, Bootstrap, dan Javascript.
 
-Cara Bermain :
+Untuk melakukan request dari end point itu sendiri dilakukan dengan javascript (80%) dan library [axios](https://github.com/axios)(20%).
 
-1. Pilih Batu atau Kertas atau Gunting di Navigasi
-2. Pilihan player dan computer akan terlihat di layar
-3. Pilih tombol new round untuk merefresh seperti tampilan awal permainan.
+Konsep tampilan Dekstop dan tablet (iPad) first, dan ada 2 halman dengan mode ala ala skeleton view supaya lebih estetik saat loading, atau html menerima respon dari backend
 
-Cara bermain harus dilakukan seperti urutan diatas, tidak boleh tidak 🙊. 
+## Tantangan
+  Seharusnya Diproject ini menggunakan javascript tanpa bantuan library, tapi saya masih mengalami kesulitan untuk menarik multiple endpoint memakai javascript. 
 
-Banyak kerungan dari game ini :
-1. Belum bisa menampilkan status pesan siapa yang menang ataupun kalah apalagi draw.
-
-
-2. Kalau pemain tidak mengikuti cara bermain yang sudah dijelaskan diatas. maka akan terjadi seperti gambar dibawah ini.
+   Jadi satu dua pages yang masih memakai library [axios](https://github.com/axios)
 
 
-   ![bugs-game!](/bugs-game-TT-md.gif)
 
-
-   Setelah keluar hasil pilihan masing masing player dan bot kemudian pemain menekan tombol batu atau kertas atau gunting maka akan terjadi penumpukan icon di layar.
-
-
-3. Belum bisa memasukan jumlah score untuk pemain apalagi computer 😭.
-
-
-Apa tantangan yang dihadapi? bikin logikanya cucah cekali 😭, karena saya baru belajar ngoding mungkin solusinya sering praktek 👨🏽‍💻. 
-
-
-> *"Practice Makes Perfects"*
-
-
-Tapi Bikin HTML CSS dilalui dengan sangat ezzzzyy 🙊.
-
+###### Lampiran:
 -----
 ###### Link Desain UI : https://www.figma.com/file/LcJvUL3iMNdFZ9lsLu0XHq/Untitled?node-id=1%3A2
