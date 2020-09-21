@@ -1,6 +1,6 @@
 # Bakergun
 
-![ui-image-game-board!]()
+![ui-image-game-board!](https://github.com/sanengineer/bakergun-frontend-html-css-js/blob/master/bakergun-ui-design.gif)
 
 Bakergun adalah akronim dari Batu Kertas Gunting.
 
