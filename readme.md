@@ -4,7 +4,7 @@
 
 Bakergun adalah akronim dari Batu Kertas Gunting.
 
-Semua asset images dari semua halaman atau pages di game ini menkonsumsi tau merequest dari [Back-End](https://github.com/sanengineer/bakergun-backend) melalui ReSTAPI.
+Semua asset images dari semua halaman atau pages di game ini menkonsumsi atau merequest dari [Back-End](https://github.com/sanengineer/bakergun-backend) melalui ReSTAPI.
 
 Project ini dibangun dengan HTML, CSS, Bootstrap, dan Javascript.
 
