@@ -1,7 +1,7 @@
 /**Override Boostrapt Style**/
 .btn {
   border-radius: 15px;
-  padding: 1rem 1rem;
+  padding: 10px;
 }
 
 .btn-dark {
@@ -107,6 +107,12 @@ body {
   position: relative;
 }
 
+.san-text-white {
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
 .player {
   width: 80vw;
   margin: auto;
@@ -165,7 +171,7 @@ body {
 }
 
 .game-play {
-  margin-top: 100px;
+  margin-top: auto;
 }
 
 /**Visble Human Hand Style**/
@@ -228,7 +234,7 @@ body {
 /**Nav Footer Style**/
 .bottom-nav {
   overflow: hidden;
-  width: 768px;
+  width: 500px;
   margin: auto;
   border-radius: 30px;
   backdrop-filter: saturate(180%) blur(10px);

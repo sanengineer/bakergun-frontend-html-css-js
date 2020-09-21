@@ -45,91 +45,6 @@
   </head>
   <body>
     <div class="game-media-query">
-      <nav
-        class="bottom-nav fixed-bottom navbar navbar-expand-lg navbar-dark pt-3 pb-3"
-      >
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-2 text-center">
-              <button
-                type="button"
-                class="btn btn-warning mt-3 mb-3 font-weight-bolder"
-                onclick="document.location='/'"
-              >
-                <img
-                  src="/assets/icons/home-icon-btn.png"
-                  alt="Home Icon"
-                  width="40"
-                />
-              </button>
-              <span class="text-white">Home</span>
-            </div>
-            <div class="col-2 text-center">
-              <button
-                type="button"
-                value="Rock"
-                class="human-button-choose btn btn-dark mt-3 mb-3 font-weight-bolder"
-              >
-                <img
-                  id="buttonHumanHandRock"
-                  src=""
-                  alt="Rock Icon"
-                  width="40"
-                  name="buttonHuman"
-                />
-              </button>
-              <span class="text-white">Rock</span>
-            </div>
-            <div class="col-2 text-center">
-              <button
-                type="button"
-                class="human-button-choose btn btn-dark mt-3 mb-3 font-weight-bolder"
-                value="Paper"
-              >
-                <img
-                  src=""
-                  id="buttonHumanHandPaper"
-                  alt="Paper Icon"
-                  width="40"
-                  name="buttonHuman"
-                />
-              </button>
-              <span class="text-white">Paper</span>
-            </div>
-            <div class="col-2 text-center">
-              <button
-                type="button"
-                class="human-button-choose btn btn-dark mt-3 mb-3 font-weight-bolder"
-                value="Scissors"
-              >
-                <img
-                  src=""
-                  id="buttonHumanHandScissors"
-                  name="buttonHuman"
-                  alt="Scissors Hand"
-                  width="40"
-                />
-              </button>
-              <span class="text-white h7">Scissors</span>
-            </div>
-            <div class="col-2 text-center">
-              <button
-                type="button"
-                class="new-round-button btn mt-3 mb-3 font-weight-bolder"
-                id="newRoundButton"
-              >
-                <img
-                  src="/assets/icons/new-round-btn.png"
-                  alt="New Round Icon"
-                  width="40"
-                />
-              </button>
-              <span class="text-white">New Round</span>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       <section class="game-section" id="gameSection">
         <div class="game-bg">
           <div class="score-board">
@@ -284,6 +199,90 @@
           </div>
         </div>
       </section>
+      <nav
+        class="bottom-nav fixed-bottom navbar navbar-expand-lg navbar-dark pt-3 pb-3"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-2 pl-0 text-center">
+              <button
+                type="button"
+                class="btn btn-warning mt-2 mb-1 font-weight-bolder"
+                onclick="document.location='/'"
+              >
+                <img
+                  src="/assets/icons/home-icon-btn.png"
+                  alt="Home Icon"
+                  width="30"
+                />
+              </button>
+              <span class="san-text-white">Home</span>
+            </div>
+            <div class="col-2 text-center">
+              <button
+                type="button"
+                value="Rock"
+                class="human-button-choose btn btn-dark mt-2 mb-1 font-weight-bolder"
+              >
+                <img
+                  id="buttonHumanHandRock"
+                  src=""
+                  alt="Rock Icon"
+                  width="30"
+                  name="buttonHuman"
+                />
+              </button>
+              <span class="san-text-white">Rock</span>
+            </div>
+            <div class="col-2 text-center">
+              <button
+                type="button"
+                class="human-button-choose btn btn-dark mt-2 mb-1 font-weight-bolder"
+                value="Paper"
+              >
+                <img
+                  src=""
+                  id="buttonHumanHandPaper"
+                  alt="Paper Icon"
+                  width="30"
+                  name="buttonHuman"
+                />
+              </button>
+              <span class="san-text-white">Paper</span>
+            </div>
+            <div class="col-2 text-center">
+              <button
+                type="button"
+                class="human-button-choose btn btn-dark mt-2 mb-1 font-weight-bolder"
+                value="Scissors"
+              >
+                <img
+                  src=""
+                  id="buttonHumanHandScissors"
+                  name="buttonHuman"
+                  alt="Scissors Hand"
+                  width="30"
+                />
+              </button>
+              <span class="san-text-white h7">Scissors</span>
+            </div>
+            <div class="col-2 pr-0 text-center">
+              <button
+                type="button"
+                class="new-round-button btn mt-2 mb-1 font-weight-bolder"
+                id="newRoundButton"
+              >
+                <img
+                  src="/assets/icons/new-round-btn.png"
+                  alt="New Round Icon"
+                  width="30"
+                />
+              </button>
+              <span class="san-text-white">Rematch</span>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
     <script src="js/game.js"></script>
   </body>
