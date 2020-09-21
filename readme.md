@@ -1,4 +1,4 @@
-# Bakergun
+# Bakergun - Frontend with HTML, CSS & Javascript
 
 ![Flow-Diagram-Frontend-Connect-RESTAPI-With-Javascript](https://res.cloudinary.com/dsv9w1ey3/image/upload/v1600701363/github-images/flow-diagram-frontend-connect-restapi-with-js_y89pgw.png)
 
