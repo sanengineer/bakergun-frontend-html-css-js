@@ -1,12 +1,14 @@
 # Bakergun
 
-![ui-image-game-board!](https://github.com/sanengineer/bakergun-frontend-html-css-js/blob/master/bakergun-ui-design.gif)
+![Flow-Diagram-Frontend-Connect-RESTAPI-With-Javascript](https://res.cloudinary.com/dsv9w1ey3/image/upload/v1600701363/github-images/flow-diagram-frontend-connect-restapi-with-js_y89pgw.png)
 
 Bakergun adalah akronim dari Batu Kertas Gunting.
 
 Semua asset images dari semua halaman atau pages di game ini menkonsumsi tau merequest dari [Back-End](https://github.com/sanengineer/bakergun-backend) melalui ReSTAPI.
 
 Project ini dibangun dengan HTML, CSS, Bootstrap, dan Javascript.
+
+![ui-image-game-board!](https://res.cloudinary.com/dsv9w1ey3/image/upload/v1600701361/github-images/bakergun-ui-design_seshio.gif)
 
 Untuk melakukan request dari end point itu sendiri dilakukan dengan javascript (80%) dan library [axios](https://github.com/axios)(20%).
 
