@@ -20,6 +20,10 @@ Seharusnya diproject ini menggunakan javascript tanpa bantuan library, tapi saya
 
 Jadi masih ada satu dua halaman yang masih memakai library [axios](https://github.com/axios)
 
+## Development
+
+Untuk melakukan development project ini dengan VSCode diperlukan plugin [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) dan [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
 ###### Lampiran:
 
 ---
