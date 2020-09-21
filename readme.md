@@ -4,7 +4,7 @@
 
 Bakergun adalah akronim dari Batu Kertas Gunting.
 
-Semua asset images dari semua halaman atau pages di game ini menkonsumsi atau merequest dari [Back-End](https://github.com/sanengineer/bakergun-backend) melalui ReSTAPI.
+Semua asset images dari semua halaman (pages) di game ini menkonsumsi atau merequest dari [Back-End](https://github.com/sanengineer/bakergun-backend) melalui ReSTAPI.
 
 Project ini dibangun dengan HTML, CSS, Bootstrap, dan Javascript.
 
@@ -12,13 +12,13 @@ Project ini dibangun dengan HTML, CSS, Bootstrap, dan Javascript.
 
 Untuk melakukan request dari end point itu sendiri dilakukan dengan javascript (80%) dan library [axios](https://github.com/axios)(20%).
 
-Konsep tampilan Dekstop dan tablet (iPad) first, dan ada 2 halman dengan mode ala ala skeleton view supaya lebih estetik saat loading, atau html menerima respon dari backend
+Konsep tampilan Dekstop dan tablet (iPad) first, dan ada 2 halman dengan mode ala ala skeleton view supaya lebih estetik saat loading.
 
 ## Tantangan
 
-Seharusnya Diproject ini menggunakan javascript tanpa bantuan library, tapi saya masih mengalami kesulitan untuk menarik multiple endpoint memakai javascript.
+Seharusnya diproject ini menggunakan javascript tanpa bantuan library, tapi saya masih mengalami kesulitan untuk menarik multiple endpoint memakai javascript.
 
-Jadi satu dua pages yang masih memakai library [axios](https://github.com/axios)
+Jadi masih ada satu dua halaman yang masih memakai library [axios](https://github.com/axios)
 
 ###### Lampiran:
 
