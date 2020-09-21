@@ -1129,6 +1129,21 @@ body {
   }
 }
 
+// @keyframes background-image {
+//   0% {
+//     opacity: 1;
+//   }
+//   45% {
+//     opacity: 1;
+//   }
+//   55% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
+
 /** Blog Page **/
 
 .blog-content {
@@ -1136,8 +1151,10 @@ body {
 
   .blog-hero-tron {
     height: 340px;
+    background-image: red;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-image 0.6s ease-in-out;
 
     .blog-title-desc {
       top: 10rem;
@@ -1254,6 +1271,35 @@ body {
 // }
 
 /** Skeleton Style **/
+.skeleton-loading {
+  position: relative;
+  background-color: #161616;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(33, 33, 33, 0.67),
+      transparent
+    );
+    // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+    animation: skeleton-loading 0.8s infinite;
+  }
+}
+
+@keyframes skeleton-loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .skeleton-card-feeds {
   // position: relative;
   display: flex;
@@ -1288,7 +1334,7 @@ body {
   .skeleton-san-post-card-img {
     object-fit: cover;
     height: 200px;
-    background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+    // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   }
 }
 
@@ -1301,7 +1347,7 @@ body {
 
 .skeleton-san-post-card-h2 {
   height: 30px;
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+  // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   border-radius: 20px;
   // h2 {
   //   font-size: 18px;
@@ -1309,14 +1355,16 @@ body {
   //   font-weight: 500;
   // }
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .skeleton-san-post-card-excerpt {
   height: 26px;
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+  // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   border-radius: 20px;
   margin-top: 20px;
   width: 160px;
+  overflow: hidden;
 }
 
 .skeleton-san-post-card-footer {
@@ -1342,12 +1390,13 @@ body {
 
   height: 51px;
   width: 51px;
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+  // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   border-radius: 100%;
   margin-right: 10px;
   margin-top: 1px;
   margin-left: 1.5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
 }
 
 .skeleton-sn-authname-cat-rdtime {
@@ -1356,20 +1405,21 @@ body {
 
 .skeleton-author-name {
   height: 12px;
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+  // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   width: 100px;
   border-radius: 30px;
+  overflow: hidden;
 }
 .skeleton-date-post {
   height: 12px;
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
+  // background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   width: 130px;
   margin-top: 10px;
   border-radius: 30px;
+  overflow: hidden;
 }
 
 /** Contact Page **/
-
 .body-contact-page {
   background-repeat: no-repeat;
   background-position: bottom;

@@ -96,7 +96,10 @@ i.forEach(() => {
   skeletonartic.setAttribute("class", "skeleton-san-post-card");
 
   const skeletonsnpcardimg = document.createElement("div");
-  skeletonsnpcardimg.setAttribute("class", "skeleton-san-post-card-img");
+  skeletonsnpcardimg.setAttribute(
+    "class",
+    "skeleton-san-post-card-img skeleton-loading"
+  );
 
   const skeletonsnpcardcontent = document.createElement("div");
   skeletonsnpcardcontent.setAttribute(
@@ -111,20 +114,23 @@ i.forEach(() => {
   skeletonsnpcardfooter.setAttribute("class", "skeleton-san-post-card-footer");
 
   const skeletonsnpcardh2 = document.createElement("div");
-  skeletonsnpcardh2.setAttribute("class", "skeleton-san-post-card-h2");
+  skeletonsnpcardh2.setAttribute(
+    "class",
+    "skeleton-san-post-card-h2 skeleton-loading"
+  );
 
   const skeletonsnpcardexcerpt = document.createElement("div");
   skeletonsnpcardexcerpt.setAttribute(
     "class",
-    "skeleton-san-post-card-excerpt"
+    "skeleton-san-post-card-excerpt skeleton-loading"
   );
 
-  const skeletonh2 = document.createElement("h2");
+  const skeletonh2 = document.createElement("div");
 
-  const skeletonp = document.createElement("p");
+  const skeletonp = document.createElement("div");
 
   const skeletonava = document.createElement("div");
-  skeletonava.setAttribute("class", "skeleton-san-ava");
+  skeletonava.setAttribute("class", "skeleton-san-ava skeleton-loading");
 
   const skeletonsnauthcatrdtime = document.createElement("div");
   skeletonsnauthcatrdtime.setAttribute(
@@ -133,10 +139,13 @@ i.forEach(() => {
   );
 
   const skeletonauthorname = document.createElement("div");
-  skeletonauthorname.setAttribute("class", "skeleton-author-name");
+  skeletonauthorname.setAttribute(
+    "class",
+    "skeleton-author-name skeleton-loading"
+  );
 
   const skeletondatepost = document.createElement("div");
-  skeletondatepost.setAttribute("class", "skeleton-date-post");
+  skeletondatepost.setAttribute("class", "skeleton-date-post skeleton-loading");
 
   skeletoncardfeeds.appendChild(skeletonartic);
 

@@ -1102,8 +1102,11 @@ body {
 
 .blog-content .blog-hero-tron {
   height: 340px;
+  background-image: red;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
 }
 
 .blog-content .blog-hero-tron .blog-title-desc {
@@ -1230,6 +1233,39 @@ body {
 }
 
 /** Skeleton Style **/
+.skeleton-loading {
+  position: relative;
+  background-color: #161616;
+}
+
+.skeleton-loading:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(33, 33, 33, 0.67)), to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(33, 33, 33, 0.67), transparent);
+  -webkit-animation: skeleton-loading 0.8s infinite;
+          animation: skeleton-loading 0.8s infinite;
+}
+
+@-webkit-keyframes skeleton-loading {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes skeleton-loading {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
 .skeleton-card-feeds {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1269,8 +1305,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), color-stop(106.33%, rgba(7, 7, 7, 0)));
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
 }
 
 .skeleton-san-post-card-content {
@@ -1289,19 +1323,17 @@ body {
 
 .skeleton-san-post-card-h2 {
   height: 30px;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), color-stop(106.33%, rgba(7, 7, 7, 0)));
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   border-radius: 20px;
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .skeleton-san-post-card-excerpt {
   height: 26px;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), color-stop(106.33%, rgba(7, 7, 7, 0)));
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   border-radius: 20px;
   margin-top: 20px;
   width: 160px;
+  overflow: hidden;
 }
 
 .skeleton-san-post-card-footer {
@@ -1318,14 +1350,13 @@ body {
 .skeleton-san-ava {
   height: 51px;
   width: 51px;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), color-stop(106.33%, rgba(7, 7, 7, 0)));
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   border-radius: 100%;
   margin-right: 10px;
   margin-top: 1px;
   margin-left: 1.5px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
 }
 
 .skeleton-sn-authname-cat-rdtime {
@@ -1334,19 +1365,17 @@ body {
 
 .skeleton-author-name {
   height: 12px;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), color-stop(106.33%, rgba(7, 7, 7, 0)));
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   width: 100px;
   border-radius: 30px;
+  overflow: hidden;
 }
 
 .skeleton-date-post {
   height: 12px;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), color-stop(106.33%, rgba(7, 7, 7, 0)));
-  background: linear-gradient(90deg, #0d0d0d 0%, rgba(7, 7, 7, 0) 106.33%);
   width: 130px;
   margin-top: 10px;
   border-radius: 30px;
+  overflow: hidden;
 }
 
 /** Contact Page **/
