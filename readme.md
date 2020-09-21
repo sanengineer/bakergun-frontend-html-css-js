@@ -1,6 +1,6 @@
 # Bakergun
 
-![ui-image-game-board!](https://github.com/sanengineer/bakergun/blob/master/game-board-ui.jpg)
+![ui-image-game-board!]()
 
 Bakergun adalah akronim dari Batu Kertas Gunting.
 
@@ -13,12 +13,13 @@ Untuk melakukan request dari end point itu sendiri dilakukan dengan javascript (
 Konsep tampilan Dekstop dan tablet (iPad) first, dan ada 2 halman dengan mode ala ala skeleton view supaya lebih estetik saat loading, atau html menerima respon dari backend
 
 ## Tantangan
-  Seharusnya Diproject ini menggunakan javascript tanpa bantuan library, tapi saya masih mengalami kesulitan untuk menarik multiple endpoint memakai javascript. 
 
-   Jadi satu dua pages yang masih memakai library [axios](https://github.com/axios)
+Seharusnya Diproject ini menggunakan javascript tanpa bantuan library, tapi saya masih mengalami kesulitan untuk menarik multiple endpoint memakai javascript.
 
-
+Jadi satu dua pages yang masih memakai library [axios](https://github.com/axios)
 
 ###### Lampiran:
------
-###### Link Desain UI : https://www.figma.com/file/LcJvUL3iMNdFZ9lsLu0XHq/Untitled?node-id=1%3A2
+
+---
+
+###### Link Desain UI : https://www.figma.com/file/LcJvUL3iMNdFZ9lsLu0XHq/Bakergun-UI-3D-Models-UI-UX?node-id=0%3A1
