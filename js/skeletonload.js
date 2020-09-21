@@ -1,10 +1,10 @@
-// const loopblog = document.getElementById("cardsArticleColumn");
+const skeletonloopblog = document.getElementById("skeletonCardsArticleColumn");
 
 const skeletoncardfeeds = document.createElement("div");
 skeletoncardfeeds.setAttribute("class", "skeleton-card-feeds");
 skeletoncardfeeds.setAttribute("id", "skeletonCards");
 
-loopblog.appendChild(skeletoncardfeeds);
+skeletonloopblog.appendChild(skeletoncardfeeds);
 
 // setTimeout(() => {
 //   var i = [1, 2, 3, 4, 5, 6];
@@ -86,7 +86,7 @@ loopblog.appendChild(skeletoncardfeeds);
 //   });
 //   setTimeout(() => {
 //     document.getElementById("skeletonCards").remove();
-//   }, 60000);
+//   }, 2000);
 // }, 500);
 
 var i = [1, 2, 3, 4, 5, 6];
@@ -126,9 +126,6 @@ i.forEach(() => {
   const skeletonava = document.createElement("div");
   skeletonava.setAttribute("class", "skeleton-san-ava");
 
-  //   const skeletonavaimgsrc = document.createElement("img");
-  //   skeletonavaimgsrc.setAttribute("alt", "Avatar Author");
-
   const skeletonsnauthcatrdtime = document.createElement("div");
   skeletonsnauthcatrdtime.setAttribute(
     "class",
@@ -160,6 +157,4 @@ i.forEach(() => {
 
   skeletonsnauthcatrdtime.appendChild(skeletonauthorname);
   skeletonsnauthcatrdtime.appendChild(skeletondatepost);
-
-  //   skeletonava.appendChild(skeletonavaimgsrc);
 });

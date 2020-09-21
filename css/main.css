@@ -19,6 +19,20 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.disnone {
+  display: none !important;
+}
+
+.disflex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.disblock {
+  display: block !important;
+}
+
 .body-home-page {
   background-repeat: no-repeat;
   background-position: top;
@@ -1111,6 +1125,10 @@ body {
   color: #aaaaaa;
 }
 
+.cards-article-column {
+  position: relative;
+}
+
 .card-feeds {
   position: relative;
   display: -webkit-box;
@@ -1213,13 +1231,13 @@ body {
 
 /** Skeleton Style **/
 .skeleton-card-feeds {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -20px;
+  padding: 50px 0 0;
 }
 
 .skeleton-san-post-card {

@@ -7,6 +7,7 @@ const blogbghero = document.getElementById("blogBgHero");
 
 const cardfeeds = document.createElement("div");
 cardfeeds.setAttribute("class", "card-feeds");
+cardfeeds.setAttribute("id", "idCardFeeds");
 
 loopblog.appendChild(cardfeeds);
 
