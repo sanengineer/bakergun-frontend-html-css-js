@@ -56,7 +56,7 @@ api.get("/gameboard").then((res) => {
   elemid("botFace").src = botfacestart;
   elemid("botHandStart").src = bothandstart;
   elemid("humanHandStart").src = humanhandstart;
-
+  // elemid("gameBody").style.backgroundImage = `url(${bgpage})`;
   document.body.style.backgroundImage = `url(${bgpage})`;
 });
 

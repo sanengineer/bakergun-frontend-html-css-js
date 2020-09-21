@@ -1252,6 +1252,63 @@ body {
           animation: skeleton-loading 0.8s infinite;
 }
 
+.skeleton-loading-black-600 {
+  position: relative;
+  background-color: #202020;
+}
+
+.skeleton-loading-black-600:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(46, 46, 46, 0.67)), to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(46, 46, 46, 0.67), transparent);
+  -webkit-animation: skeleton-loading 0.8s infinite;
+          animation: skeleton-loading 0.8s infinite;
+}
+
+.skeleton-loading-green {
+  position: relative;
+  background-color: #24da00;
+}
+
+.skeleton-loading-green:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(72, 241, 86, 0.67)), to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(72, 241, 86, 0.67), transparent);
+  -webkit-animation: skeleton-loading 0.8s infinite;
+          animation: skeleton-loading 0.8s infinite;
+}
+
+.skeleton-loading-yellow {
+  position: relative;
+  background-color: #ffa800;
+}
+
+.skeleton-loading-yellow:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(250, 178, 69, 0.67)), to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(250, 178, 69, 0.67), transparent);
+  -webkit-animation: skeleton-loading 0.8s infinite;
+          animation: skeleton-loading 0.8s infinite;
+}
+
 @-webkit-keyframes skeleton-loading {
   100% {
     -webkit-transform: translateX(100%);
