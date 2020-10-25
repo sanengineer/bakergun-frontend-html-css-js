@@ -2,10 +2,10 @@ const req1 = new XMLHttpRequest();
 const req2 = new XMLHttpRequest();
 
 // Endpoint Backend RestAPI Local
-const apiv1 = "http://localhost:8008/api/v1";
+// const apiv1 = "http://localhost:8008/api/v1";
 
 // Endpoint Backend RestAPI Cloud
-// const apiv1 = "https://bakergun-backend.herokuapp.com/api/v1";
+const apiv1 = "https://bakergun-backend.herokuapp.com/api/v1";
 
 req1.open("GET", `${apiv1}/players`, true);
 req1.onload = function () {
