@@ -4,7 +4,7 @@ const contFeatImg = document.getElementById("signUpFeatureImage");
 // const apiv1 = "http://localhost:8008/api/v1";
 
 // Endpoint Backend RestAPI Cloud
-const apiv1 = "https://bakergun-backend.herokuapp.com/api/v1";
+const apiv1 = "https://bakergun-backend.vercel.app/api/v1";
 
 req.open("GET", `${apiv1}/images`, true);
 req.onload = function () {

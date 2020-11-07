@@ -32,7 +32,7 @@ let getBotChoice = ["Rock", "Paper", "Scissors"];
 newRound.addEventListener("click", getNewRound);
 
 const api = axios.create({
-  baseURL: `https://bakergun-backend.herokuapp.com/api/v1`,
+  baseURL: `https://bakergun-backend.vercel.app/api/v1`,
 });
 
 api.get("/gameboard").then((res) => {
@@ -80,6 +80,7 @@ api.get("/gameboard").then((res) => {
     // console.log(res.data);
     // console.log(gameboard);
     // console.log(b);
+    console.log("bot select: " + botrandomselect);
 
     if (result === "You") {
       humanScoreResult++;

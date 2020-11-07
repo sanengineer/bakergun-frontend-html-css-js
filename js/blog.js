@@ -1,5 +1,5 @@
 const api = axios.create({
-  baseURL: `https://bakergun-backend.herokuapp.com/api/v1`,
+  baseURL: `https://bakergun-backend.vercel.app/api/v1`,
 });
 
 const loopblog = document.getElementById("cardsArticleColumn");
